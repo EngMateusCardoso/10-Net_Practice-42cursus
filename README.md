@@ -37,7 +37,7 @@ Redes Internas
 - 192.168.0.0/16
 
 IPs reservados
-- 127.0.0.0/8 - loopback
+- 127.0.0.1/8 á 127.0.0.254/8 - loopback
 - 196.254.0.0/16 - APIPA: IP atomático
 - 0.0.0.0 IP de inicialização
 - 255.255.255.255 broadcast geral
