@@ -15,13 +15,13 @@ Overlap: No contexto de redes e roteamento, "overlap" significa que duas ou mais
 
 Classes
 
-| Classe | intervalo do 1º octeto | Atribuída a host | qtt de endereços | Mascara |
-| --- | --- | --- | --- | --- |
-| Classe A | 0-127 | Sim | 16.777.216 | 255.0.0.0 |
-| Classe B | 128-191 | Sim | 65.536 | 255.255.0.0 |
-| Classe C | 192-223 | Sim | 256 | 255.255.255.0 |
-| Classe D | 224-239 | Não | Multicast | - |
-| Classe E | 240-255 | Não | Novas tecnologias | - |
+| Classe | intervalo do 1º octeto | Atribuída a host | qtt de endereços | Mascara  de rede | CIDR |
+| --- | --- | --- | --- | --- | --- |
+| Classe A | 0-127 | Sim | 16.777.216 | 255.0.0.0 | /8 |
+| Classe B | 128-191 | Sim | 65.536 | 255.255.0.0 | /16 |
+| Classe C | 192-223 | Sim | 256 | 255.255.255.0 | /24 |
+| Classe D | 224-239 | Não | Multicast | - | - |
+| Classe E | 240-255 | Não | Novas tecnologias | - | - |
 
 |nom|send menssage |
 | --- | --- |
@@ -41,3 +41,10 @@ IPs reservados
 - 196.254.0.0/16 - APIPA: IP atomático
 - 0.0.0.0 IP de inicialização
 - 255.255.255.255 broadcast geral
+
+Mascara CIDR:  classless inter-domain routing
+
+Endereços de IP
+- Rede: O primeiro (Só zeros): Sempre é par
+- Host: todos os outros
+- Broadcast: O último (Só 1s): Sempre é ímpar
