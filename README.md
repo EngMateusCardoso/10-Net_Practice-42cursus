@@ -10,8 +10,6 @@ Overlap: No contexto de redes e roteamento, "overlap" significa que duas ou mais
 |11110000|240|
 |11111000|248|
 |11111100|252|
-|11111110|254|
-|11111111|255|
 
 Classes
 
